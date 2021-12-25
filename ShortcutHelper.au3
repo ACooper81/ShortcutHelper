@@ -1,11 +1,12 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.14.5
- Author:         myName
+ Author:         ACooper81
 
  Script Function:
-	Template AutoIt script.
+	Includes a lot of functions to help with shortcuts
 
 #ce ----------------------------------------------------------------------------
 
-; Script Start - Add your code below here
+#AutoIt3Wrapper_Change2CUI = y
+
