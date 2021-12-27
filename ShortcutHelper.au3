@@ -35,8 +35,10 @@ For $i = 1 To $SectionNames[0]
 				$userfile = @StartMenuDir & StringReplace($file, "Start Menu", "")
 				$userlnk = @StartMenuDir & StringReplace($lnk, "Start Menu", "")
 				If FileExists($userfile) Then FileCopy($userfile, $userlnk, 9)
+			Else
+				
+				;~ FileCreateShortcut()
 			EndIf
-			;~ FileCreateShortcut()
 		Next
 	EndIf
 Next
