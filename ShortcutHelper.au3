@@ -31,10 +31,10 @@ For $i = 1 To $SectionNames[0]
 			If StringLeft($file, 11) == "Start Menu\" Then
 				$commonfile = @StartMenuCommonDir & StringReplace($file, "Start Menu", "")
 				$commonlnk = @StartMenuCommonDir & StringReplace($lnk, "Start Menu", "")
-				FileCopy($commonfile, $commonlnk, 9)
+				If FileExists($commonfile) Then FileCopy($commonfile, $commonlnk, 9)
 				$userfile = @StartMenuDir & StringReplace($file, "Start Menu", "")
 				$userlnk = @StartMenuDir & StringReplace($lnk, "Start Menu", "")
-				FileCopy($userfile, $userlnk, 9)
+				If FileExists($userfile) Then FileCopy($userfile, $userlnk, 9)
 			EndIf
 			;~ FileCreateShortcut()
 		Next
