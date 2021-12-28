@@ -82,6 +82,7 @@ For $i = 1 To $SectionNames[0]
 		Next
 	EndIf
 Next
+;~ Sleep(10000)
 
 Func GetDir($sFilePath)
 
