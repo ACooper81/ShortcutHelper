@@ -15,7 +15,7 @@ $FileName = @ScriptDir & "\StartMenu.ini"
 $SectionNames = IniReadSectionNames($FileName)
 
 For $i = 1 To $SectionNames[0]
-	ConsoleWrite("[" & $SectionNames[$i] & "]" & @CRLF)
+	;~ ConsoleWrite("[" & $SectionNames[$i] & "]" & @CRLF)
 	$KeyValues = IniReadSection($FileName, $SectionNames[$i])
 	If UBound($KeyValues) > 1 Then
 		For $i2 = 1 To $KeyValues[0][0]
